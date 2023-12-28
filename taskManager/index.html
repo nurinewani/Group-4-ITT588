@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Task Manager</title>
+</head>
+<body>
+    <header>
+        <h1>Task Manager</h1>
+    </header>
+
+    <!-- Navigation bar -->
+    <button class="tablink" onclick="openPage('Home', this, '#9873FF')" id="defaultOpen" style = "width: 50%" >Home</button>
+	<button class="tablink" onclick="openPage('About', this, '#9873FF')" style = "width: 50%" >About Us</button>
+
+    <!-- Home page -->
+    <div id="Home" class="tabcontent">
+        <div class="container">
+            <div class="task-form">
+                <h2>Add Task</h2><br>
+                <form id="taskForm">
+    
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="title">Title:</label>
+                        </div>
+    
+                        <div class="col-75">
+                            <input type="text" id="title" name="title" size="53" required><br><br>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="description">Description:</label>
+                        </div>
+    
+                        <div class="col-75">
+                            <textarea id="description" name="description"  rows="10" cols="50" required></textarea><br><br>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="dueDate">Due Date:</label>
+                        </div>
+    
+                        <div class="col-75">
+                            <input type="date" id="dueDate" name="dueDate" required><br><br>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="priority">Priority:</label>
+                        </div>
+    
+                        <div class="col-75">
+                            <select id="priority" name="priority">
+                                <option value="Low">Low</option>
+                                <option value="Medium">Medium</option>
+                                <option value="High">High</option>
+                            </select><br><br>
+                        </div>
+                    </div>
+    
+                    <button type="button" class="btn" onclick="addTask()">Submit Task</button>
+                </form>
+            </div><br><br>
+    
+            <div>
+                <h2>Task List</h2><br>
+
+                <div class="filter-container">
+                    <label for="priorityFilter">Filter by Priority:</label>
+                    <select id="priorityFilter" onchange="filterTasks()">
+                        <option value="all">All</option>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div><br>
+
+                <ul class="task-list" id="taskList">
+                    <!-- Task items will be dynamically added here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us -->
+    <div id="About" class="tabcontent">
+        <div class="ourteam-section">
+
+            <h1>Github Link</h1>
+            <span class="sempadan"></span>
+            <p>Click the image to direct to repository</p><br><br>
+
+            <a href="https://github.com/nurinewani/Group-4-ITT588.git">
+                <img src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png" alt="HTML tutorial" style="width:550px; height:300px;">
+            </a><br><br><br><br><br>
+
+            <h1>Our Team</h1>
+            <span class="sempadan"></span>
+            <div class="ps">
+              <a href="#zunah"><img src="zunah.jpg" alt=""></a>
+              <a href="#nurin"><img src="nurin.jpg" alt=""></a>
+              <a href="#dina"><img src="dina.jpg" alt=""></a>
+              <a href="#fatimah"><img src="fatimah.jpg" alt=""></a>
+            </div>
+            
+            <div class="segment" id="zunah">
+              <span class="name">Nurzunah Fithriyyyah</span>
+              <p><center>
+              Developers
+              </center></p>
+            </div>
+            
+            <div class="segment" id="nurin">
+              <span class="name">Nurin Ewani</span>
+              <p><center>
+                Developers
+              </center></p>
+            </div>
+            
+            <div class="segment" id="dina">
+              <span class="name">Aisyah Irdina</span>
+              <p><center>
+                Developers
+              </center></p>
+            </div>
+            
+            <div class="segment" id="fatimah">
+              <span class="name">Siti Nur Fatimah</span>
+              <p><center>
+                Developers
+              </center></p>
+            </div>
+            
+            
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <!-- This is the footer -->
+        <p>&copy Group 4 2023</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html> 

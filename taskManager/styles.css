@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-form {
+    margin-bottom: 20px;
+}
+
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+.task-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item label {
+    margin-right: 20px;
+    display: list-item;
+    width: 500px;
+}
+
+.task-item.completed {
+    background-color: #e6f7e8;
+    border-color: #c3e6cb;
+}
+
+
+/* Button for edit */
+.btn {
+    background-color: #333;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 20%;
+    display: list-item;
+}
+
+/* Button for delete */
+.btn-danger {
+    background-color: #9873FF;
+    padding: 12px 33px;
+}
+
+/* For task form */
+.col-25 {
+float: left;
+width: 25%;
+margin-top: 6px;
+}
+
+.col-75 {
+float: left;
+width: 75%;
+margin-top: 6px;
+
+}
+
+/* Style tab links */
+.tablink {
+background-color: #BB73FF;
+color: white;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 13px 16px;
+font-size: 20px;
+width: 14%;
+font-family: Arial;
+font-weight: bold;
+}
+
+.tablink:hover {
+background-color: #B297FE;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+color: black;
+display: none;
+padding: 100px 20px;
+height: auto;
+}
+
+
+#Home {background-color: #9873FF;}
+#About {background-color: #9873FF;}
+
+
+/*About us page*/
+.aboutus-section {
+padding: 50px;
+text-align: center;
+color: white;
+}
+
+.kolum {
+float: left;
+width: 50%;
+padding: 10px;
+height: 300px;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+*{
+margin: 0;
+padding: 0;
+}
+
+.ourteam-section{
+overflow: hidden;
+text-align: center;
+padding: 50px;
+background-color: #DEC1EC;
+border-radius: 25px;
+}
+
+.ourteam-section h1{
+text-transform: uppercase;
+margin-bottom: 20px;
+color: black;
+font-size: 40px;
+}
+
+.sempadan{
+display: block;
+margin: auto;
+width: 150px;
+height: 3px;
+background: #BB73FF;
+margin-bottom: 40px;
+}
+
+.ps{
+margin-bottom: 40px;
+position: relative;
+}
+
+.ps a{
+display: inline-block;
+margin: 0 30px;
+width: 220px;
+height: 220px;
+overflow: hidden;
+border-radius: 50%;
+}
+
+.ps a img{
+width: 100%;
+filter: grayscale(90%);
+transition: 0.4s all;
+}
+
+.ps a:hover > img{
+filter: none;
+}
+
+.segment{
+width: 600px;
+margin: auto;
+font-size: 20px;
+color: black;
+text-align: justify;
+height: 0;
+overflow: hidden;
+}
+
+.segment:target{
+height: auto;
+}
+
+.name{
+display: block;
+margin-bottom: 20px;
+text-align: center;
+text-transform: uppercase;
+font-size: 22px;
+font-weight: bold;
+}
+
+/* Footer */
+
+#footer {
+	background-color: #FFFFFF;
+	height: 20px;
+	position: static;
+    padding: 1%;
+
+}

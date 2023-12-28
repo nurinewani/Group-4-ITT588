@@ -1,0 +1,17 @@
+{
+    "name": "your-task-manager",
+    "version": "1.0.0",
+    "description": "Your task manager description",
+    "main": "index.html",
+    "scripts": {
+      "start": "node index.html",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "task manager",
+      "web application"
+    ],
+    "author": "Group4",
+    "license": "MIT"
+  }
+  
