@@ -1,18 +1,19 @@
-* {
+* { /* For overall format */
     margin:0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-body {
+body { /*Body of contents*/
     min-height: auto;
+    min-width: auto;
     background: url('background.jpg') no-repeat;
     background-size: cover;
     background-position: center;    
 }
 
-.header {
+.header { /*Header bar*/
     background-color: saddlebrown;
     color: #fff;
     padding: 10px 0;
@@ -20,22 +21,12 @@ body {
     padding-left: 5%;
 }
 
-header h1 {
+header h1 { /*Header title*/
     margin: 0;
     text-align: center;
 }
-
-.logo {
-    font-size: 25px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-    display: flex; /* Add display: flex */
-    align-items: center;
-    justify-content: center; /* Center the content horizontally */
-}
-
-.navbar a {
+  
+.navbar a { /*navigation bar*/
     position: relative;
     font-size: 18px;
     color: #fff;
@@ -64,30 +55,30 @@ header h1 {
     color: black;
 }
 
-.container 
+.container /*for all container*/
 {
   max-width: 90%;
-  margin: 10px auto;
+  margin: 20px auto;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: rgba(160, 82, 45, 0.8);
   border-radius: 5px;
 }
 
-.box {
+.box { /*box for Add Task function*/
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 form 
-{
+{   /*add task form*/
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
 
-.box {
+.box { 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -118,8 +109,6 @@ form
         width: 80%; /* Adjust as needed for larger screens */
     }
 }
-
-
 
 .task-item {
     margin-bottom: 10px;
@@ -204,6 +193,7 @@ margin-top: 6px;
 
 /*About us page*/
 
+
 .aboutus-section {
     padding: 50px;
     text-align: center;
@@ -213,12 +203,11 @@ margin-top: 6px;
 .ourteam-section {
     overflow: hidden;
     text-align: center;
-    width: 100%;
+    width: 80%;
     padding: 30px;
     box-sizing: border-box;
-    background-color: rgba(160, 82, 45, 0.5);
+    background-color: rgba(160, 82, 45, 0.8);
     border-radius: 5px;
-    max-width: 1200px;
     margin: 100px auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-left: 10%; /* Adjust as needed */
@@ -241,6 +230,7 @@ margin-top: 6px;
 }
 
 .ps {
+    margin: 10px 40px;
     margin-bottom: 40px;
     position: relative;
     display: flex; /* Display team members in a row */
@@ -250,7 +240,7 @@ margin-top: 6px;
 
 .ps a {
     display: inline-block;
-    margin: 0 20px; /* Adjust as needed */
+    margin: 20px 20px; /* Adjust as needed */
     width: 150px;
     height: 150px;
 }
@@ -290,13 +280,13 @@ margin-top: 6px;
 }
 
 /* Media queries for responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 80%) {
     .ourteam-section {
-        margin-left: 5%;
+        width: auto;
     }
 
     .ps a {
-        margin: 0 10px; /* Adjust as needed */
+        margin: 0; /* Adjust as needed */
     }
 
     .segment {

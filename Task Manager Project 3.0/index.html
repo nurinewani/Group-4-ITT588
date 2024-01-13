@@ -4,53 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- to call the style.css file -->
 
     <title>Task Manager</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="navbar">  
-            <h1>*✧･ﾟ:* Task Manager *:･ﾟ✧*</h1>
+        <div class="navbar">  <!-- Header Bar -->
+            <h1>*✧･ﾟ:* Task Manager *:･ﾟ✧*</h1> <!-- Web Application title -->
             <nav class="navbar">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
+                <a href="index.html">Home</a> <!-- Home button -->
+                <a href="about.html">About</a> <!-- About us button -->
             </nav>
         </div>
     </header>
 
     <!-- Home page -->
     <div class="container">
-        <div class="box">
-            <div class="task-form">
+        <div class="box"> <!-- Container to hold two container in one frame -->
+            <div class="task-form"> <!-- Task form -->
                 <h2>Add Task</h2><br>
                     <form id="taskForm">
                         <label for="title">Title:</label>
-                        <input type="text" id="title" required>
+                        <input type="text" id="title" required> <!-- User input title -->
                         
                         <label for="description">Description:</label>
-                        <textarea id="description" required></textarea>
+                        <textarea id="description" required></textarea> <!-- User input description -->
 
                         <label for="dueDate">Due Date:</label>
-                        <input type="date" id="dueDate" required>
+                        <input type="date" id="dueDate" required> <!-- User input due date -->
 
                         <label for="priority">Priority:</label>
-                        <select id="priority" name="priority">
+                        <select id="priority" name="priority"> <!-- User choose priority -->
                             <option value="Low">Low</option>
                             <option value="Medium">Medium</option>
                             <option value="High">High</option>
                         </select>
 
                     <!--<button type="button" class="button" onclick="addTask()">Submit Task</button>-->
-                    <button type="button" onclick="addTask()">Add Task</button>
+                    <button type="button" onclick="addTask()">Add Task</button> <!-- Add task button -->
                 </form>
             </div>
 
-            <div id="taskListContainer">
+            <div id="taskListContainer"> <!-- Container to place all tasks that has been created-->
                 <h2>Task List</h2>
                 <br>
-                <label for="priorityFilter">Filter by Priority:</label><br>
+                <label for="priorityFilter">Filter by Priority:</label><br> <!-- Filter task list according to priority -->
                 <div class="filter-container"><br>
                     <select id="priorityFilter" onchange="filterTasks()">
                         <option value="all">All</option>
